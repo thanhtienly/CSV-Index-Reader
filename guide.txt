@@ -4,6 +4,7 @@ Các method, function cần thực hiện:
     # set_next_cursor method of QueryBuilder class
     # insert_transaction method of TransactionTable class
     # get_transactions function in app.py 
+    # sort_raw_file function in pre_process.py
 
 *** Lưu ý: 
     # Khi đọc file cần chọn mode 'rb', để CsvReader class có thể sử dụng function seek.
