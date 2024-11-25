@@ -1,0 +1,18 @@
+Các method, function cần thực hiện: 
+    # index method of CsvReader class
+    # set_offset method of QueryBuilder class
+    # set_next_cursor method of QueryBuilder class
+    # insert_transaction method of TransactionTable class
+    # get_transactions function in app.py 
+
+*** Lưu ý: 
+    # Khi đọc file cần chọn mode 'rb', để CsvReader class có thể sử dụng function seek.
+    # Tạo index file cho file csv bằng cách đọc từng dòng giao dịch trong file csv, lưu lại offset của hàng
+      đầu tiên của số tiền giao dịch, offset của hàng cuối cùng của số tiền giao dịch, và lưu lại offset của
+      hàng cuối cùng trong csv file.
+    # Ví dụ file index.json chứa nội dung index có định dạng kiểu: 
+        {
+            "1000":[114,10149],
+            "1100":[10149,10314],
+            "last_line_offset": 10314
+        }
